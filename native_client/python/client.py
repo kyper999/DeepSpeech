@@ -8,7 +8,8 @@ import subprocess
 import sys
 import scipy.io.wavfile as wav
 import numpy as np
-from deepspeech.model import Model
+
+from deepspeech import Model
 
 # These constants control the beam search decoder
 

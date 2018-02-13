@@ -50,7 +50,7 @@ fi;
 
 if [ "${ds}" = "deepspeech" ]; then
     pip install "${DEEPSPEECH_PYTHON_PACKAGE}" | cat
-    python -c "import tensorflow; from deepspeech.utils import audioToInputVector"
+    python -c "import tensorflow; from deepspeech import audioToInputVector"
 
     # Since this build depends on the completion of the whole deepspeech package
     # and we might get into funny situation with --config=monolithic, then let's
